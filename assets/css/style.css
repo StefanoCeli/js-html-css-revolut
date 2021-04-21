@@ -71,15 +71,19 @@ header{
     outline: none;
 }
 .dropdown{
-    width: 800px;
-    border-radius: 15px;
-    padding: 25px;
+    white-space: nowrap;
+    border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
     position: absolute;
-    left: -200px;
+    left: 0;
     top: 180%;
     display: none;
+}
+.dropdown.features{
+    width: 800px;
+    padding: 25px;
+    left: -200px;
     justify-content: space-between;
 }
 .active{
@@ -102,5 +106,8 @@ header{
     list-style: none;
 }
 .dropdown ul li{
-    padding-top: 30px;
+    padding:15px 20px;
+}
+.dropdown.features ul li{
+    padding: 15px 0 15px;
 }
